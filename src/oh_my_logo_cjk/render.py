@@ -77,7 +77,12 @@ def wrap_and_render(
     char_fill = "█"
     char_empty = " "
     cell_cols = 1
-    if pixel_width_mode.lower().startswith("f"):
+    mode = (pixel_width_mode or "h").lower()
+    if mode == "hf":
+        char_fill = "██"
+        char_empty = "  "
+        cell_cols = 2
+    elif mode.startswith("f"):
         char_fill = "██"
         char_empty = "　"
         cell_cols = 2

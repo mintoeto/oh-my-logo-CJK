@@ -49,7 +49,7 @@
     mono 	#f07178 → #f07178 	Single coral color
     - option提供了一些可选客制化选项，如下：
     Option 	Description 	Default
-    -pw, --pixel-width <pw>   每个像素输出的字符模式是全角还是半角，如果参数为h（half），则为半角的'█'和空格；如果参数为f（full），则用全角的"█"和全角空格"　"
+    -pw, --pixel-width <pw>   每个像素输出的字符模式是全角还是半角，如果参数为h（half），则为半角的'█'和空格；如果参数为f（full），则用全角的"█"和全角空格"　"，如果参数为hf（half-full）,则为两个半角的'█'或半角空格作为视觉上的全角字符来绘制
     -d, --direction <dir> 	Gradient direction (vertical, horizontal, diagonal) 	vertical
     --letter-spacing <n> 	Letter spacing for filled mode (integer spaces between characters, 0+) 	1
     --reverse-gradient 	Reverse gradient colors 	false

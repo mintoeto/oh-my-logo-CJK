@@ -58,7 +58,7 @@ def run(
         "h",
         "-pw",
         "--pixel-width",
-        help="Pixel width mode: h=half width, f=full width",
+        help="每个像素输出的字符模式是全角还是半角，如果参数为h（half），则为半角的'█'和空格；如果参数为f（full），则用全角的\"█\"和全角空格\"　\"，如果参数为hf（half-full），则为两个半角的'█'或半角空格作为视觉上的全角字符来绘制",
         show_default=True,
     ),
     direction: str = typer.Option(
