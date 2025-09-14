@@ -1,0 +1,27 @@
+{
+    "fonts": 
+    [
+        {
+            "name": "7px",
+            "path": "DinkieBitmap-7pxDemo.ttf",
+            "font_size": 8,
+            "grid_size": [
+                8,8
+            ],
+            "offset": [
+                0,1
+            ]
+        },
+        {
+            "name": "9px",
+            "path": "DinkieBitmap-9pxDemo.ttf",
+            "font_size": 10,
+            "grid_size": [
+                10,10
+            ],
+            "offset": [
+                0,1
+            ]
+        }
+    ]
+}
