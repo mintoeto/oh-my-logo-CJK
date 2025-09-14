@@ -1,9 +1,10 @@
 ## oh-my-logo-cjk
 
+![预览](https://raw.githubusercontent.com/Antonoko/oh-my-logo-CJK/refs/heads/main/images/preview.jpg)
+
 该项目能将输入的中、日、韩文本渲染为 CLI 中的像素风 ASCII 图，支持多种渐变色板。
 
 启发自只能输入 ASCII 的 [oh-my-logo](https://github.com/shinshin86/oh-my-logo)
-
 
 - CJK 友好：基于像素字体采样（非预制 ASCII），支持中、日、韩等多语种
 - 从 oh-my-logo 偷了多种渐变色板与方向，支持 24-bit ANSI 颜色
