@@ -16,7 +16,7 @@
 ### 安装与运行
 
 - 安装 Python >= 3.9
-- 推荐使用 `uv` 运行本地项目
+- 推荐使用 [`uv`](https://github.com/astral-sh/uv) 运行本地项目
 
 不安装到全局环境，直接在仓库根目录运行：
 
@@ -89,6 +89,8 @@ oh-my-logo-cjk <text> [font] [palette] [options]
 
 ```bash
 uv run oh-my-logo-cjk run "你好世界" 7px grad-blue --color > art.txt
+
+cat art.txt
 ```
 
 
