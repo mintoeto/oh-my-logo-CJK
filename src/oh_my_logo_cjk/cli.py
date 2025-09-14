@@ -71,6 +71,19 @@ def run(
     letter_spacing: int = typer.Option(
         1, "--letter-spacing", help="Spaces between characters in filled mode (0+)", min=0
     ),
+    style: str = typer.Option(
+        "block",
+        "-s",
+        "--style",
+        help=(
+            "额外样式选择：none：无额外样式；simpleBlock：如果使用此选项，将-pw的规则强制应用为hf（half-full），然后将其中原本的两个半角的'█'替换为\"_|\"；"
+            "shade：阴影样式（实现方式：依次遍历空格留空格子，如果空格子正上方一格有填充，那么保持留空，否则填充\"░\"。如果正上方一格无格子，也就是第一行，则填充\"░\"）；"
+            "block：伪3d格子样式（实现方式：依次遍历空格子，检查该格子左上角方向的三个相邻格子，这里为说明方便，将该包含该空格子的左上角三个格子共四个格子是否填充描述为：[1，1，1，0]（最左上、该空格上方格子、该格子左边格子、该空格子），"
+            "实心为1、空格留白为0，制表符阴影的填充规则为：[1，1，1，0]-\"╔\", [1，1，0，0]-\"═\", [1，0，1，0]-\"║\", [1，0，0，0]-\"╝\", [0，0，0，0]-\" \"， [0，1，1，0]-\"╝\", [0，0，1，0]-\"╗\", [0，1，0，0]-\"╚\"）；"
+            "默认样式为block"
+        ),
+        show_default=True,
+    ),
     reverse_gradient: bool = typer.Option(
         False, "--reverse-gradient", help="Reverse gradient colors"
     ),
@@ -131,6 +144,7 @@ def run(
         direction,
         reverse_gradient,
         pixel_width,
+        style,
         force_color,
         color_space,
     )
@@ -155,6 +169,7 @@ def run(
                 direction,
                 reverse_gradient,
                 pixel_width,
+                style,
                 force_color,
                 color_space,
             )
